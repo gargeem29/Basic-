@@ -1,86 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian</title>
-  <style>
+  <head>
+    <meta charset="UTF-8" />
    
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-  .container{
-    display: grid;
-    height: 748px;
-    width: 748px;
-    background-color: black;
-    grid-template-columns: 320px 198px 153px 50px;
-    grid-template-rows: 414px 130px 155px 20px;
-    gap: 9px;
-  }
-  .item{
-    background-color: #F0F1EC;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsVibee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+  </head>
 
-  }
-  .red{
-    background-color: #E72F24;
-  }
 
-  .white1{
-    grid-column: span 3;
-  }
-  .white2{
-    grid-row: span 2;
-
-  }
-  .white3{
-    /*grid area is 
-    grid row start, grid-col start, grid row end, grid col end */
-   grid-area: 2/ 2/ 4/ 4;
-
-  }
-  
-  .blue{
-  
-  background-color: #004592;
-  border-bottom: 10px solid #000;
-  }
-  
-  .white4{
-    grid-row: span 2;
-  }
-  .yellow{
-    background-color: yellow;
-
-  }
-  .black{
-    background-color: black;
-  }
-  </style>
-</head>
-
-<body>
- 
-  <div class = "container">
-   
-    <div class="item red"></div>
-    <div class="item white1"></div>
-    <div class="item white2"></div>
-    <div class="item white3"></div>
-
-    <div class="item blue"></div>
-    <div class="item white4"></div>
-
-    <div class="item"></div>
-    <div class="item yellow"></div>
-    <div class="item black"></div>
- </div>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="src/main.jsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
